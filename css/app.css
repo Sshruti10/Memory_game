@@ -1,0 +1,143 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #EB0366;
+  font-family: 'Coda', cursive;
+}
+
+body {
+  font-family: 'Open Sans';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+          align-items: center;
+          background: #FFA6D4;
+}
+
+h1 {
+  color: #C30053;
+  padding-top: 220px;
+  font-family: 'arial';
+}
+
+.Playground {
+  width: 690px;
+  background-color: #CE6D96;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.5);
+}
+.Playground .box {
+  height: 150px;
+  width: 150px;
+  background: #B91F61;
+  display: inline-block;
+  margin: 0 30px 30px 0;
+  line-height: 150px;
+  font-size: 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(-180deg);
+  font-family: Arial;
+}
+
+.score {
+
+  font-size: 30px;
+  color: #EB0366;
+}
+
+#scores {
+  text-align: left;
+  width: 450px;
+  font-size: 30px;
+  
+}
+#scores .stars {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+#scores .stars li {
+  list-style: none;
+  display: inline-block;
+}
+#scores .Restart {
+  float: right;
+  cursor: pointer;
+}
+
+.reset {
+
+    font-size: 30px;
+    color: #EB0366;
+}
+
+.Playground .box:nth-child(4n) {
+  margin: 0 0 15px 0;
+}
+.Playground .box:nth-child(n+13) {
+  margin: 0 30px 0 0;
+}
+.Playground .box:nth-child(n+13):nth-child(4n) {
+  margin: 0;
+}
+.Playground .box.open {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  background: #FFA6D4;
+  cursor: pointer;
+}
+.Playground .box.show {
+  font-size: 33px;
+}
+.Playground .box.match {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  cursor: default;
+  background: #FFA6D4;
+  font-size: 30px;
+}
+.Playground .box.notmatch {
+  background: #BDBDBD;
+}
+
+@media only screen and (max-width: 800px){
+  .Playground .box{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .Playground {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .Playground .box{
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    margin: 0 10px 10px 0 !important;
+  }
+
+  .Playground {
+    width: 250px;
+  }
+}
