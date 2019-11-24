@@ -1,5 +1,8 @@
 # Memory Game Project
 
+# DEMO
+!(https://github.com/Sshruti10/Memory_game/blob/master/memory_game.png)
+
 # index.html
 <p>Index file contains the layout of memory game.It contains classes for score panel which includes star rating, timer and moves.</p>
 
